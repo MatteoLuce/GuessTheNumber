@@ -32,6 +32,10 @@ button{
     border-radius: 10px;
 }
 
+button:hover{
+    background-color: lightblue;
+}
+
 #result{
     font-size: 30px;
 }
