@@ -10,13 +10,13 @@ document.getElementById("submit").onclick = function verifyNumber (){
     let result;
     
     if (userGuess == myNumber) {
-        result = "You get it! Good job mate";
+        result = `${userGuess}?  You get it! Good job mate`;
         document.getElementById("result").style.color = "green"
     } else if (userGuess < myNumber) {
-        result = "The number is too small!"
+        result = `${userGuess}?  The number is too small!` 
         document.getElementById("result").style.color = "orange"
     } else if (userGuess > myNumber) {
-        result = "The number is too high!"
+        result = `${userGuess}?  The number is too high!`
         document.getElementById("result").style.color = "red"
     } 
 
@@ -32,5 +32,4 @@ function refreshPage (){
     setTimeout(()=> { window.location.reload(); },2000);
     
 }
-
 
