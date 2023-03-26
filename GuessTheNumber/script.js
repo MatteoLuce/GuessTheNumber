@@ -56,3 +56,11 @@ function refreshPage (){
 
 document.getElementById("demo").innerHTML = `Your last score was: ${localStorage.getItem("lastscore")} attemps`;
 
+let valor = localStorage.getItem("lastscore");
+
+if (valor != 'null') {
+    document.getElementById('demo').style.display = 'block';
+} else {
+    document.getElementById('demo').style.display = 'none';
+}
+
